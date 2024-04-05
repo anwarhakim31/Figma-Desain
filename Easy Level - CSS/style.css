@@ -1,0 +1,94 @@
+:root {
+  --clr-primary-800: #203271;
+  --clr-primary-900: #101c45;
+
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-900: #000000;
+
+  --fs-0-75: 0.75;
+  --fs-1: 1rem;
+  --fs-1-2: 1.125rem;
+  --fs-3: 3rem;
+
+  --fw-reguler: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --ff-primary: "DM Sans", sans-serif;
+  --ff-secondary: "Source Sans 3", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--clr-primary-900);
+}
+
+.container {
+  --max-width: 1270px;
+  --container-padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--container-padding)-1px));
+  margin-inline: auto;
+}
+
+.clr-primary-900 {
+  color: var(--clr-primary-900);
+}
+
+.clr-primary-800 {
+  color: var(--clr-primary-800);
+}
+
+.clr-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.clr-neutral-900 {
+  color: var(--clr-neutral-900);
+}
+
+.fw-reguler {
+  font-weight: var(--fw-reguler);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+.ff-secondary {
+  font-family: var(--ff-secondary);
+}
+
+.fs-1 {
+  font-size: var(--fs-0-75);
+}
+
+.fs-2 {
+  font-size: var(--fs-1);
+}
+
+.fs-3 {
+  font-size: var(--fs-1-2);
+}
+
+.fs-4 {
+  font-size: var(--fs-3);
+}
