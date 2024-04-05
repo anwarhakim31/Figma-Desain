@@ -19,6 +19,15 @@
   --ff-secondary: "Source Sans 3", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,14 +36,167 @@
 
 body {
   color: var(--clr-primary-900);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-reguler);
 }
 
+/* header */
+main {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+header {
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  gap: 50px;
+  margin-right: auto;
+}
+
+.list a {
+  font-family: var(--ff-secondary);
+  color: var(--clr-neutral-900);
+  opacity: 0.8;
+}
+
+.list a.active {
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-900);
+}
+
+.extra {
+  gap: 15px;
+}
+
+.extra span {
+  color: var(--clr-primary-900);
+}
+
+.extra a {
+  border: 1px solid var(--clr-neutral-900);
+  padding: 8px 20px;
+}
+
+/* hero */
+.content-text {
+  width: 50%;
+}
+
+.content-text > * {
+  max-width: 457px;
+}
+
+.content-img-50 {
+  width: 50%;
+  position: relative;
+}
+
+.back-img {
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-55px);
+}
+
+.back-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-text p {
+  margin: 15px 0 40px 0;
+}
+
+.btn {
+  padding: 15px 35px;
+  background-color: var(--clr-primary-800);
+}
+
+.info {
+  padding: 2.5rem;
+  background-color: var(--clr-primary-800);
+}
+
+.info-wrapper {
+  gap: 2rem;
+}
+
+.box {
+  width: 359px;
+}
+
+.box .box-content p {
+  padding-top: 10px;
+}
+
+.box img {
+  padding-right: 25px;
+}
+
+.box {
+  align-items: start;
+}
+
+.absolute {
+  padding: 20px;
+  position: absolute;
+  background: var(--clr-neutral-100);
+  top: 25%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 30px rgb(0 0 0 /10%);
+  width: 370px;
+  border-radius: 10px;
+}
+.badge {
+  margin-bottom: 12px;
+}
+
+.badge span {
+  margin-left: 12px;
+}
+
+.absolute p {
+  line-height: 1.5;
+}
+
+/* utitlty */
 .container {
-  --max-width: 1270px;
+  --max-width: 1280px;
   --container-padding: 1rem;
 
-  width: min(var(--max-width), 100% - (var(--container-padding)-1px));
-  margin-inline: auto;
+  width: min(var(--max-width), 100% - var(--container-padding));
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-main {
+  display: flex;
+  align-items: center;
+
+  justify-content: var(--content);
+}
+
+.text-height {
+  line-height: 1.5;
+}
+
+.text-height1 {
+  line-height: 1.2;
 }
 
 .clr-primary-900 {
