@@ -18,6 +18,7 @@
   --fs-1: 1rem;
 
   --fs-1-25: 1.25rem;
+  --fs-1-5: 1.5rem;
   --fs-28: 1.75rem;
   --fs-2-5: 2.5rem;
   --fs-2-75: 2.75rem;
@@ -255,6 +256,30 @@ body {
   }
 }
 
+/* section top product */
+
+.top-products-content {
+  margin-top: var(--size-200);
+  display: grid;
+  justify-content: center;
+  gap: var(--size-100);
+  border-radius: 6.62px;
+}
+
+@media (min-width: 768px) {
+  .top-products-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* best seller */
+.best-seller {
+  margin-bottom: var(--fs-1);
+}
+.best-seller span {
+  font-size: var(--fs-0-875);
+}
+
 /* utility */
 
 .container {
@@ -370,7 +395,7 @@ body {
 }
 
 .fs-secondary-heading {
-  font-size: var(--fs-secondary-heading);
+  font-size: clamp(var(--fs-1-5), 5vw, var(--fs-secondary-heading));
 }
 
 .fs-third-heading {
