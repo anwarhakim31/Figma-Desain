@@ -11,17 +11,18 @@
 
   --ff-nav: "Poppins", sans-serif;
   --ff-primary: "Lora", serif;
-  --ff-body: "Poppins", sans-serif;
+  --ff-body: "Ubuntu", sans-serif;
 
   --fs-0-75: 0.75;
   --fs-0-875: 0.875;
   --fs-1: 1rem;
 
   --fs-1-25: 1.25rem;
+  --fs-28: 1.75rem;
   --fs-2-5: 2.5rem;
   --fs-2-75: 2.75rem;
   --fs-3: 3rem;
-  --fs-4: 5.237px;
+  --fs-4: 3.273125rem;
 
   --fs-body: var(--fs-1);
   --fs-primary-heading: var(--fs-4);
@@ -93,6 +94,26 @@ body {
   font-weight: var(--fw-reguler);
   font-family: var(--ff-body);
   color: var(--clr-neutral-500);
+}
+
+/* button  */
+
+.btn {
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-900);
+  line-height: 1.4;
+  font-size: 14.96px;
+  background-color: var(--clr-primary-500);
+  padding: 9.35px 18.7px;
+  border-radius: 7.48px;
+  border: 0;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
 }
 
 /* nav */
@@ -180,6 +201,60 @@ body {
   }
 }
 
+/* hero section */
+.wrapper {
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    gap: var(--size-200);
+  }
+
+  .hero-content {
+    order: 2;
+  }
+}
+
+.hero-content {
+  flex: 1 1 598px;
+  align-content: center;
+}
+
+.hero-content p {
+  font-size: clamp(var(--fs-0-875), 5vw, var(--fs-1));
+  line-height: 1.4;
+  padding-top: var(--size-100);
+  padding-bottom: var(--fs-2-5);
+}
+
+.hero-image {
+  flex: 1 1 598px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* sponsor */
+
+.swrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-between;
+  gap: var(--size-100);
+}
+
+@media (max-width: 768px) {
+  .swrapper {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
 /* utility */
 
 .container {
@@ -202,7 +277,7 @@ body {
 
 @media (max-width: 768px) {
   .d-flex {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -259,19 +334,19 @@ body {
 }
 
 .padding-block-nav {
-  padding-block: clamp(var(--size-300), 5vw, 0px);
+  padding-block: clamp(0px, 5vw, var(--size-300));
 }
 
 .padding-block-500 {
-  padding-block: clamp(var(--size-500), 5vw, var(--size-200));
+  padding-block: clamp(var(--size-200), 5vw, var(--size-500));
 }
 
 .padding-block-400 {
-  padding-block: clamp(var(--size-400), 5vw, var(--size-200));
+  padding-block: clamp(var(--size-200), 5vw, var(--size-400));
 }
 
 .padding-way-block-500 {
-  padding-block: clamp(var(--size-500), 5vw, var(--size-100));
+  padding-block: clamp(var(--size-100), 5vw, var(--size-500));
 }
 
 .ff-nav {
@@ -288,4 +363,16 @@ body {
 
 .gap-1 {
   gap: var(--size-100);
+}
+
+.fs-primary-heading {
+  font-size: clamp(var(--fs-28), 5vw, var(--fs-primary-heading));
+}
+
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-third-heading {
+  font-size: var(--fs-third-heading);
 }
