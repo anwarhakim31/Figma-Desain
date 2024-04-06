@@ -278,6 +278,23 @@ body {
 }
 .best-seller span {
   font-size: var(--fs-0-875);
+  cursor: pointer;
+}
+
+swiper-container {
+  margin-top: var(--size-100);
+}
+
+swiper-container.grab {
+  cursor: grab;
+}
+
+swiper-slide {
+  padding: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 /* utility */
@@ -399,5 +416,5 @@ body {
 }
 
 .fs-third-heading {
-  font-size: var(--fs-third-heading);
+  font-size: clamp(var(--fs-1-5), 5vw, var(--fs-third-heading));
 }

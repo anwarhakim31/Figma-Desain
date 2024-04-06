@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="padding-block-nav">
@@ -131,7 +135,7 @@
 
       <section class="top-product-section padding-block-500">
         <div class="container">
-          <h2 class="fs-secondary-heading fw-semi-bold ff-primary">
+          <h2 class="fs-third-heading fw-semi-bold ff-primary">
             Top Selections
           </h2>
           <div class="top-products-content">
@@ -148,15 +152,50 @@
         </div>
       </section>
       <section class="best-seller">
-        <div class="d-flex-main" style="--content: space-between">
-          <h2 class="fs-secondary-heading ff-primary fw-semi-bold">
-            Bestsellers
-          </h2>
-          <span class="ff-nav fw-semi-bold text-primary-500"> See ALL </span>
+        <div class="container">
+          <div class="d-flex-main" style="--content: space-between">
+            <h2 class="fs-secondary-heading ff-primary fw-semi-bold">
+              Bestsellers
+            </h2>
+            <span class="ff-nav fw-semi-bold text-primary-500"> See ALL </span>
+          </div>
+
+          <swiper-container
+            class="mySwiper"
+            slides-per-view="4"
+            space-between="16"
+          >
+            <swiper-slide
+              ><div>
+                <img
+                  src="image/slider/6b39f25e-88f3-45fd-b5b9-d42812af8437 1.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide-content">
+                <h3 class="fs-sub-heading"></h3>
+              </div>
+            </swiper-slide>
+            <swiper-slide
+              ><img
+                src="image/slider/6b39f25e-88f3-45fd-b5b9-d42812af8437 1.png"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="image/slider/6b39f25e-88f3-45fd-b5b9-d42812af8437 1.png"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="image/slider/6b39f25e-88f3-45fd-b5b9-d42812af8437 1.png"
+                alt=""
+            /></swiper-slide>
+          </swiper-container>
         </div>
       </section>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
