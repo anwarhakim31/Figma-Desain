@@ -456,6 +456,115 @@ swiper-slide {
     text-align: start;
   }
 }
+
+/* footer */
+.fwrapper {
+  display: grid;
+  grid-template-areas:
+    "fabout"
+    "category"
+    "company"
+    "download";
+
+  color: var(--clr-neutral-500);
+  gap: var(--size-100);
+}
+
+.fabout {
+  /* max-width: 285px; */
+  grid-area: fabout;
+  max-width: 285px;
+}
+
+.fwrapper p {
+  margin-top: 1rem;
+  font-size: var(--fs-0-75);
+}
+
+.product-category {
+  grid-area: category;
+}
+
+.company {
+  grid-area: company;
+}
+
+.information {
+  /* max-width: 349px; */
+  gap: clamp(var(--size-100), 5vw, var(--size-400));
+}
+
+.information h4 {
+  white-space: nowrap;
+}
+
+.information-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.information-content a {
+  color: var(--clr-neutral-500);
+  white-space: nowrap;
+}
+
+.download {
+  /* max-width: 343px; */
+  grid-area: download;
+}
+
+.download > * {
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.download button {
+  padding: 0.5rem;
+  background-color: var(--clr-neutral-900);
+  border-radius: 0.5rem;
+}
+
+.btn-dwnload {
+  gap: 0.5rem;
+
+  justify-content: center !important;
+}
+
+.d-wrapper {
+  flex-wrap: wrap;
+}
+
+/* .app-store,
+.play-store {
+  width: 167px;
+} */
+
+@media (min-width: 768px) {
+  .fwrapper {
+    grid-template-areas: "fabout category company download";
+    justify-content: space-between;
+  }
+
+  .fabout {
+    grid-area: fabout;
+    max-width: 285px;
+  }
+  .product-category {
+    grid-area: category;
+    max-width: 165px;
+  }
+  .Company {
+    grid-area: company;
+    max-width: 120px;
+  }
+  .download {
+    grid-area: download;
+    max-width: 343px;
+  }
+}
+
 /* utility */
 
 .container {
