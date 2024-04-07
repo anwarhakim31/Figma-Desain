@@ -537,10 +537,10 @@ swiper-slide {
   flex-wrap: wrap;
 }
 
-/* .app-store,
+.app-store,
 .play-store {
   width: 167px;
-} */
+}
 
 @media (min-width: 768px) {
   .fwrapper {
